@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100px;
+    background-color: #eee;
+}
+
+.head,
+.footer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: .5rem;
+    background-color: green;
+    font-size: .16rem;
+    align-items: center;
+    z-index: 100;
+}
+
+.head {
+    top: 0;
+}
+
+.head .return,
+.head .more {
+    text-align: center;
+    margin: 0 .1rem;
+}
+
+.head .qunming {
+    flex: 1;
+    text-align: center;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.footer .audio,
+.footer .face,
+.footer .add {
+    margin: 0 .1rem;
+    font-size: .25rem;
+}
+
+.footer .inputContent {
+    height: 80%;
+    flex: 1;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #777;
+    padding-left: 10px;
+}
+
+.footer .add {
+    margin-left: 0;
+}
+
+.list {
+    position: absolute;
+    top: .5rem;
+    bottom: .5rem;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+}
+
+.list .item {
+    position: relative;
+    width: 100%;
+    font-size: .16rem;
+}
+
+
+.list .profile {
+    width: .4rem;
+    height: .4rem;
+    background-size: contain;
+    position: absolute;
+    left: .1rem;
+    top: .1rem;
+}
+
+.list .sentence {
+    margin-left: .6rem;
+    margin-right: 1rem;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: .08rem;
+    display: inline-block;
+    position: relative;
+}
+
+.list .sentence::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -14px;
+    top: .1rem;
+    width: 0;
+    height: 0;
+    border: .07rem solid transparent;
+    border-right-color: #fff;
+}
+
+.list .name {
+    display: block;
+    margin-left: .6rem;
+    padding-top: .5em;
+    color: #777;
+    font-size: 14px;
+}
